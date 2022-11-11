@@ -29,18 +29,18 @@ jobs:
       - name: setup environments
         run: |
 
-          echo "HOST={{ secrets.HOST }}" >> .env
-          echo "PORT={{ secrets.PORT }}" >> .env
-          echo "APP_KEYS={{ secrets.APP_KEYS }}" >> .env
-          echo "API_TOKEN_SALT={{ secrets.API_TOKEN_SALT }}" >> .env
-          echo "ADMIN_JWT_SECRET={{ secrets.ADMIN_JWT_SECRET }}" >> .env
-          echo "JWT_SECRET={{ secrets.JWT_SECRET }}" >> .env
-          echo "DATABASE_HOST={{ secrets.DATABASE_HOST }}" >> .env
-          echo "DATABASE_PORT={{ secrets.DATABASE_PORT }}" >> .env
-          echo "DATABASE_NAME={{ secrets.DATABASE_NAME }}" >> .env
-          echo "DATABASE_USERNAME={{ secrets.DATABASE_USERNAME }}" >> .env
-          echo "DATABASE_PASSWORD={{ secrets.DATABASE_PASSWORD }}" >> .env
-          echo "DATABASE_SSL={{ secrets.DATABASE_SSL }}" >> .env
+          echo "HOST=${{ secrets.HOST }}" >> .env
+          echo "PORT=${{ secrets.PORT }}" >> .env
+          echo "APP_KEYS=${{ secrets.APP_KEYS }}" >> .env
+          echo "API_TOKEN_SALT=${{ secrets.API_TOKEN_SALT }}" >> .env
+          echo "ADMIN_JWT_SECRET=${{ secrets.ADMIN_JWT_SECRET }}" >> .env
+          echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
+          echo "DATABASE_HOST=${{ secrets.DATABASE_HOST }}" >> .env
+          echo "DATABASE_PORT=${{ secrets.DATABASE_PORT }}" >> .env
+          echo "DATABASE_NAME=${{ secrets.DATABASE_NAME }}" >> .env
+          echo "DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }}" >> .env
+          echo "DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }}" >> .env
+          echo "DATABASE_SSL=${{ secrets.DATABASE_SSL }}" >> .env
 
       - name: list dir
         run: |
