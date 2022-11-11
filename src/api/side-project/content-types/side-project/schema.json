@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "side_projects",
+  "info": {
+    "singularName": "side-project",
+    "pluralName": "side-projects",
+    "displayName": "side_project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "github_link": {
+      "type": "string"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "stack": {
+      "type": "json"
+    }
+  }
+}
