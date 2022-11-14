@@ -37,6 +37,9 @@
       "relation": "oneToOne",
       "target": "api::blog-detail.blog-detail",
       "inversedBy": "blog"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

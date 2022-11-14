@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::blog.blog",
-      "inversedBy": "blog_detail"
+      "mappedBy": "blog_detail"
     }
   }
 }
