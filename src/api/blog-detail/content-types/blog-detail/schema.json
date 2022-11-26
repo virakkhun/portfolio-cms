@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-detail",
     "pluralName": "blog-details",
-    "displayName": "blog-detail"
+    "displayName": "blog-detail",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
       "relation": "oneToOne",
       "target": "api::blog.blog",
       "mappedBy": "blog_detail"
+    },
+    "table": {
+      "type": "json"
     }
   }
 }
